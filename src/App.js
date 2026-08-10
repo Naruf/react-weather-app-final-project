@@ -9,13 +9,14 @@ export default function App() {
       <footer>
         <div className="Footer">
           This project was coded by{" "}
-          <a href="https://github.com/Naruf" target="_blank">
+          <a href="https://github.com/Naruf" target="_blank" rel="noreferrer">
             Nadia Ruiz
           </a>
           , is{" "}
           <a
             href="https://github.com/Naruf/react-weather-app-final-project"
             target="_blank"
+            rel="noreferrer"
           >
             open-sourced on Github
           </a>{" "}
@@ -23,6 +24,7 @@ export default function App() {
           <a
             href="https://react-weather-app-final-project.vercel.app/"
             target="_blank"
+            rel="noreferrer"
           >
             Vercel
           </a>
