@@ -1,0 +1,29 @@
+.container {
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.degrees {
+  font-size: 30px;
+  position: relative;
+  bottom: 50px;
+}
+.list {
+  list-style: none;
+}
+.temperature {
+  font-size: 90px;
+  font-weight: 700;
+  position: relative;
+  bottom: 10px;
+}
+.weather-icon {
+  font-size: 60px;
+  position: relative;
+  bottom: 25px;
+  right: 15px;
+}
+li .red-text {
+  color: red;
+}

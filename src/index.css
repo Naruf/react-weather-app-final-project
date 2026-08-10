@@ -1,0 +1,11 @@
+body {
+  background-attachment: fixed; /* optional: keeps it still on scroll */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: radial-gradient(
+    401px at 50.6% -0.3%,
+    rgba(255, 255, 255, 0.31) 1.2%,
+    rgb(36, 212, 219) 100.2%
+  );
+  min-height: 100vh;
+}

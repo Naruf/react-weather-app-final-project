@@ -1,0 +1,10 @@
+.link {
+  color: rgb(97, 179, 172);
+  font-weight: 500;
+}
+.background-color-dark {
+  background-color: rgb(97, 179, 172);
+}
+.background-color-light {
+  background-color: rgb(202, 235, 232);
+}
