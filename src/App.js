@@ -9,9 +9,9 @@ import Forecast from "./Forecast";
 export default function App() {
   return (
     <div className="App">
-      <div className="css-container rounded-3 d-block m-auto h-auto mt-5 pb-2 pt-2 bg-light">
+      <div className="css-container rounded-3 d-block m-auto h-auto mt-5 pb-2 pt-2 bg-light shadow">
         <Logo />
-        <Weather city="london" />
+        <Weather defaultCity="london" />
         <Forecast />
         <Footer />
       </div>
