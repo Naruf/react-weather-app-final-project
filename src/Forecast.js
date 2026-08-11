@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Forecast() {
   return (
-    <div className="forecast-container text-center ms-4 mt-4 mb-5 ">
+    <div className="forecast-container text-center ms-4 ps-4 mt-4 mb-5 ">
       <div className="row d-flex gap-3">
         <div className="col-2">
           <div className="Day">

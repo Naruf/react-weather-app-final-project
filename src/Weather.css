@@ -1,8 +1,9 @@
-.container {
+.css-container {
   font-family: "Roboto Slab", serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+  width: 800px;
 }
 .degrees {
   font-size: 30px;
@@ -24,6 +25,9 @@
   bottom: 25px;
   right: 15px;
 }
-li .red-text {
-  color: red;
+.background-color-dark {
+  background-color: rgb(97, 179, 172);
+}
+.background-color-light {
+  background-color: rgb(221, 247, 247);
 }
