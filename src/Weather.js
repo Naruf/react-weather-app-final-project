@@ -1,11 +1,29 @@
 import React, { useState } from "react";
 import axios from "axios";
+import UpdatedDateTime from "./UpdatedDateTime";
 
 export default function Weather({ city }) {
+  //date update
+  // let now = new Date();
+  // let weekdays = [
+  //   "Sunday",
+  //   "Monday",
+  //   "Tuesday",
+  //   "Wednesday",
+  //   "Thurday",
+  //   "Friday",
+  //   "Saturday",
+  // ];
+  // let day = now.getDay();
+  // let today = weekdays[day];
+  // let hours = String(now.getHours()).padStart(2, "0");
+  // let minutes = String(now.getMinutes()).padStart(2, "0");
+
   let [ready, setReady] = useState(false);
   let [weatherInfo, setWeatherInfo] = useState({});
 
-  function handleSubmit(response) {
+  //Weather api call to update weather info for a given city in the component <Weather city = "london">
+  function handleApiResponse(response) {
     console.log(response.data);
     setReady(true);
     setWeatherInfo({
@@ -15,6 +33,7 @@ export default function Weather({ city }) {
       humidity: response.data.temperature.humidity,
       wind: response.data.wind.speed,
       icon: response.data.condition.icon_url,
+      date: new Date(response.data.time * 1000),
     });
   }
   if (ready) {
@@ -23,7 +42,7 @@ export default function Weather({ city }) {
         <header className="border-bottom">
           <form
             className="form-container mt-4 mb-4 me-3 ms-3"
-            onSubmit={handleSubmit}
+            // onSubmit={handleSubmit}
           >
             <div className="row ">
               <div className="col-9 me-0 pe-0">
@@ -52,7 +71,9 @@ export default function Weather({ city }) {
               <h1>{weatherInfo.city}</h1>
               <ul className="list ps-0">
                 <li>
-                  Monday 17:00,{" "}
+                  <span>
+                    <UpdatedDateTime date={weatherInfo.date} />
+                  </span>
                   <span className="text-capitalize">
                     {weatherInfo.condition}
                   </span>
@@ -83,7 +104,7 @@ export default function Weather({ city }) {
     );
   } else {
     let url = `https://api.shecodes.io/weather/v1/current?query=${city}&key=5d1t76143df0603191aa4604b0b5b1oe&units=metric`;
-    axios.get(url).then(handleSubmit);
+    axios.get(url).then(handleApiResponse);
     alert("Something went wrong. Try again");
   }
 }
