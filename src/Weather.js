@@ -73,6 +73,6 @@ export default function Weather({ defaultCity }) {
     );
   } else {
     search();
-    return "Loading...";
+    return <h1 className="m-5">"Loading..."</h1>;
   }
 }

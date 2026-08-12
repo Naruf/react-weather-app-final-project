@@ -5,6 +5,7 @@ import "./Weather.css";
 import "./Footer.css";
 import Logo from "./Logo";
 import Forecast from "./Forecast";
+import "./WeatherData.css";
 
 export default function App() {
   return (

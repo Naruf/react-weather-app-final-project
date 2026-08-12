@@ -5,26 +5,11 @@
   font-style: normal;
   width: 800px;
 }
-.degrees {
-  font-size: 30px;
-  position: relative;
-  bottom: 50px;
-}
+
 .list {
   list-style: none;
 }
-.temperature {
-  font-size: 90px;
-  font-weight: 700;
-  position: relative;
-  bottom: 10px;
-}
-.weather-icon {
-  font-size: 60px;
-  position: relative;
-  bottom: 25px;
-  right: 15px;
-}
+
 .background-color-dark {
   background-color: rgb(97, 179, 172);
 }
