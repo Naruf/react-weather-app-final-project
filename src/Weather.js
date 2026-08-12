@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import WeatherData from "./WeatherData";
+import Forecast from "./Forecast";
 
 export default function Weather({ defaultCity }) {
   let [ready, setReady] = useState(false);
@@ -17,7 +18,7 @@ export default function Weather({ defaultCity }) {
       condition: response.data.condition.description,
       humidity: response.data.temperature.humidity,
       wind: response.data.wind.speed,
-      icon: response.data.condition.icon_url,
+      icon: response.data.condition.icon,
       date: new Date(response.data.time * 1000),
     });
   }
@@ -68,11 +69,14 @@ export default function Weather({ defaultCity }) {
             </div>
           </form>
         </header>
-        <WeatherData data={weatherInfo} />
+        <main>
+          <WeatherData data={weatherInfo} />
+          <Forecast />
+        </main>
       </div>
     );
   } else {
     search();
-    return <h1 className="m-5">"Loading..."</h1>;
+    return <h1 className="m-5">Loading...</h1>;
   }
 }
