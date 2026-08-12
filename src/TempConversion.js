@@ -32,7 +32,7 @@ export default function TempConversion({ defaultTemp }) {
     let farenheit = Math.round((defaultTemp * 9) / 5 + 32);
     return (
       <div className="TempConversion">
-        <span className="temperature ps-0">{farenheit}</span>
+        <span className="temperature">{farenheit}</span>
         <span className="degrees pe-2">
           <span>
             <a

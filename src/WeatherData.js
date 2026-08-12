@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import UpdatedDateTime from "./UpdatedDateTime";
-import ReactAnimatedWeather from "react-animated-weather";
+
 import TempConversion from "./TempConversion";
 
 export default function WeatherData({ data }) {
