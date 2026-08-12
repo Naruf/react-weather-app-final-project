@@ -23,7 +23,8 @@ export default function Weather({ defaultCity }) {
   }
   //Search engine logic
   // 1. when form is submitted, prevent default and search for a city we still don't know
-  // 2. update city when a value is entered in the form with handleCityUpdate
+  // 2. update city when a value is entered in the form with handleCityUpdate that wil be the value of setCity
+  //3. declare function Search with api call info in it
   function search() {
     let url = `https://api.shecodes.io/weather/v1/current?query=${city}&key=5d1t76143df0603191aa4604b0b5b1oe&units=metric`;
     axios.get(url).then(handleApiResponse);
@@ -72,5 +73,6 @@ export default function Weather({ defaultCity }) {
     );
   } else {
     search();
+    return "Loading...";
   }
 }

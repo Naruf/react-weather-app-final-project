@@ -1,7 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import UpdatedDateTime from "./UpdatedDateTime";
+import ReactAnimatedWeather from "react-animated-weather";
 
-export default function weatherInfo({ data }) {
+export default function WeatherData({ data }) {
+  let [temperature, setTemperature] = useState(data.temperature);
+  function showFarenheit() {
+    let farenheitRounded = Math.round((data.temperature * 9) / 5 + 32);
+    setTemperature(farenheitRounded);
+  }
+  function showCelsius() {
+    setTemperature(data.temperature);
+  }
+
   return (
     <div className="WeatherData">
       <section className="city-weather-container mt-4">
@@ -27,8 +37,11 @@ export default function weatherInfo({ data }) {
             <span className="weather-icon">
               <img src={data.icon} alt="weatherIcon" width="90px" />
             </span>
-            <span className="temperature">{data.temperature}</span>
-            <span className="degrees">°C | °F</span>
+            <span className="temperature">{temperature}</span>
+            <span className="degrees">
+              <span onClick={showCelsius}>°C </span>|
+              <span onClick={showFarenheit}>°F</span>
+            </span>
           </div>
         </div>
       </section>
