@@ -3,7 +3,7 @@ import UpdatedDateTime from "./UpdatedDateTime";
 import TempConversion from "./TempConversion";
 import WeatherIcon from "./WeatherIcon";
 
-export default function WeatherData({ data }) {
+export default function WeatherData({ data, size }) {
   return (
     <div className="WeatherData">
       <section className="city-weather-container mt-4">
@@ -27,7 +27,7 @@ export default function WeatherData({ data }) {
           </div>
           <div className="col-5 temperature-section d-flex text-end pe-5 ">
             <span className="weather-icon ">
-              <WeatherIcon iconDescription={data.icon} />
+              <WeatherIcon iconDescription={data.icon} size={100} />
             </span>
             <span className="tempBlock">
               <TempConversion defaultTemp={data.temperature} />
