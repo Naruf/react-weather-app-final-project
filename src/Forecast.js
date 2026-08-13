@@ -12,25 +12,20 @@ export default function Forecast({ coordinates }) {
   }
 
   if (forecastReady) {
-    console.log(forecast);
+    // console.log(forecast);
     return (
       <div className="forecast-container text-center ms-4 ps-4 mt-4 mb-5 ">
         <div className="row d-flex gap-3">
-          <div className="col-2 ">
-            <ForecastDay dayForecast={forecast[0]} />
-          </div>
-          {/* <div className="col-2 ">
-            <ForecastDay dayForecast={forecast[1]} />
-          </div>
-          <div className="col-2 ">
-            <ForecastDay dayForecast={forecast[2]} />
-          </div>
-          <div className="col-2 ">
-            <ForecastDay dayForecast={forecast[3]} />
-          </div>
-          <div className="col-2 ">
-            <ForecastDay dayForecast={forecast[4]} />
-          </div> */}
+          {forecast.map(function (eachDayForecast, index) {
+            if (index < 5) {
+              return (
+                <div key={index} className="col-2 ">
+                  <ForecastDay dayForecast={eachDayForecast} />
+                </div>
+              );
+            }
+            return null;
+          })}
         </div>
       </div>
     );
