@@ -4,13 +4,16 @@
   right: 20px;
 }
 .temperature {
-  font-size: 85px;
+  font-size: 90px;
   font-weight: 700;
   position: relative;
   bottom: 10px;
+  left: 20px;
 }
 .degrees {
-  font-size: 25px;
+  font-size: 30px;
+  font-weight: 700;
   position: relative;
   bottom: 50px;
+  left: 20px;
 }

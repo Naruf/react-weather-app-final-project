@@ -1,6 +1,6 @@
 import React from "react";
 import UpdatedDateTime from "./UpdatedDateTime";
-import TempConversion from "./TempConversion";
+
 import WeatherIcon from "./WeatherIcon";
 
 export default function WeatherData({ data, size }) {
@@ -30,7 +30,8 @@ export default function WeatherData({ data, size }) {
               <WeatherIcon iconDescription={data.icon} size={100} />
             </span>
             <span className="tempBlock">
-              <TempConversion defaultTemp={data.temperature} />
+              <span className="temperature">{data.temperature}</span>
+              <span className="degrees">°C </span>
             </span>
           </div>
         </div>
