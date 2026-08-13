@@ -1,7 +1,16 @@
 import React from "react";
+import axios from "axios";
 import WeatherIcon from "./WeatherIcon";
 
-export default function Forecast() {
+export default function Forecast({ coordinates }) {
+  function showForecast(response) {
+    console.log(response);
+  }
+
+  let latitude = coordinates.latitude;
+  let longitude = coordinates.longitude;
+  let forecastUrl = `https://api.shecodes.io/weather/v1/forecast?lat=${latitude}&lon=${longitude}&key=5d1t76143df0603191aa4604b0b5b1oe&units=metric`;
+  axios.get(forecastUrl).then(showForecast);
   return (
     <div className="forecast-container text-center ms-4 ps-4 mt-4 mb-5 ">
       <div className="row d-flex gap-3">
@@ -15,7 +24,7 @@ export default function Forecast() {
               <div className="row ">
                 <div className="col-6">
                   <span className="max-temp">
-                    <strong>24°</strong>
+                    <strong>25°</strong>
                   </span>
                 </div>
                 <div className="col-6">

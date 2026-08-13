@@ -20,6 +20,7 @@ export default function Weather({ defaultCity }) {
       wind: response.data.wind.speed,
       icon: response.data.condition.icon,
       date: new Date(response.data.time * 1000),
+      coordinates: response.data.coordinates,
     });
   }
   //Search engine logic
@@ -71,7 +72,7 @@ export default function Weather({ defaultCity }) {
         </header>
         <main>
           <WeatherData data={weatherInfo} />
-          <Forecast />
+          <Forecast coordinates={weatherInfo.coordinates} />
         </main>
       </div>
     );
