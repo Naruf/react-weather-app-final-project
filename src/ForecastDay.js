@@ -5,7 +5,6 @@ export default function ForecastDay({ dayForecast }) {
   function dayData() {
     let days = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
     let date = new Date(dayForecast.time * 1000);
-    console.log(date);
     let day = date.getDay();
     let today = days[day];
     return today;
