@@ -6,7 +6,7 @@ export default function UpdatedDateTime({ date }) {
     "Monday",
     "Tuesday",
     "Wednesday",
-    "Thurday",
+    "Thursday",
     "Friday",
     "Saturday",
   ];
