@@ -7,13 +7,29 @@
   font-size: 90px;
   font-weight: 700;
   position: relative;
-  bottom: 10px;
-  left: 20px;
+  bottom: 18px;
+  right: 10px;
 }
 .degrees {
   font-size: 30px;
   font-weight: 700;
   position: relative;
-  bottom: 50px;
-  left: 20px;
+  bottom: 60px;
+  right: 10px;
+}
+
+@media (max-width: 600px) {
+  .temperature {
+    font-size: 80px;
+  }
+  .degrees {
+    font-size: 30px;
+    font-weight: 700;
+    position: relative;
+    bottom: 55px;
+  }
+  .weather-icon {
+    position: relative;
+    top: 5px;
+  }
 }

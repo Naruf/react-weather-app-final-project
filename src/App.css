@@ -1,3 +1,15 @@
 .css-container {
-  box-shadow: 6px 8px 16px black;
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  width: 700px;
+}
+
+@media (max-width: 600px) {
+  .css-container {
+    display: block;
+    margin: auto;
+    max-width: 500px;
+  }
 }

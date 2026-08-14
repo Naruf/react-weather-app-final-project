@@ -46,13 +46,13 @@ export default function Weather({ defaultCity }) {
       <div className="container">
         <header className="border-bottom">
           <form
-            className="form-container mt-4 mb-4 me-3 ms-3"
+            className="form-container mt-4 mb-4 me-sm-3 ms-sm-2 ms-0"
             onSubmit={handleSubmit}
           >
-            <div className="row ">
-              <div className="col-9 me-0 pe-0">
+            <div className="row d-block m-auto text-center d-sm-flex w-auto">
+              <div className="col-12 col-sm-9 me-0 pe-0">
                 <input
-                  className="search-input w-100 p-2 ps-3 ms-2 rounded border-0 background-color-light text-secondary"
+                  className="search-input w-100 p-2 ps-3 ms-sm-2 rounded border-0 background-color-light text-secondary"
                   type="search"
                   placeholder="Enter a city name..."
                   required
@@ -60,7 +60,7 @@ export default function Weather({ defaultCity }) {
                   onChange={handleCityUpdate}
                 />
               </div>
-              <div className="col-3 ms-0">
+              <div className="col-12 justify-content-center m-auto mt-2 mt-sm-0 col-sm-3 ms-sm-0">
                 <input
                   className="search-button p-2 ps-5 pe-5 rounded border-0 background-color-dark text-white"
                   type="submit"

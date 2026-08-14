@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <div
       className="Footer text-center border-top m-3 p-3 text-secondary pt-4
-     text-opacity-50"
+     text-opacity-50 smallFont"
     >
       This project was coded by{" "}
       <a

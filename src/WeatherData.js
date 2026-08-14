@@ -8,11 +8,11 @@ export default function WeatherData({ data, size }) {
     <div className="WeatherData">
       <section className="city-weather-container mt-4">
         <div className="row gap-0">
-          <div className="col-7 city-weather-section ps-5 ">
-            <h1>{data.city}</h1>
+          <div className="city-weather-section d-block m-auto text-center col-sm-7 text-sm-start ps-sm-5 ">
+            <h1 className="">{data.city}</h1>
             <ul className="list ps-0">
               <li>
-                <span>
+                <span className="">
                   <UpdatedDateTime date={data.date} />
                 </span>
                 <span className="text-capitalize">{data.condition}</span>
@@ -25,14 +25,22 @@ export default function WeatherData({ data, size }) {
               </li>
             </ul>
           </div>
-          <div className="col-5 temperature-section d-flex text-end pe-5 ">
-            <span className="weather-icon ">
-              <WeatherIcon iconDescription={data.icon} size={100} />
-            </span>
-            <span className="tempBlock">
-              <span className="temperature">{data.temperature}</span>
-              <span className="degrees">°C </span>
-            </span>
+          <div className="temperature-section col-sm-5 text-sm-end pe-sm-5">
+            <div className=" ">
+              <div className="row">
+                <div className="col-6 text-end">
+                  <span className="weather-icon ">
+                    <WeatherIcon iconDescription={data.icon} size={80} />
+                  </span>
+                </div>
+                <div className="col-6 text-sm-start">
+                  <span className="tempBlock">
+                    <span className="temperature">{data.temperature}</span>
+                    <span className="degrees">°C </span>
+                  </span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>

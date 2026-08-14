@@ -2,3 +2,8 @@
   color: rgb(97, 179, 172);
   font-weight: 500;
 }
+@media (max-width: 600px) {
+  .Footer {
+    font-size: 12px;
+  }
+}
