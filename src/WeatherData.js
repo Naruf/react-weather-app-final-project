@@ -6,7 +6,7 @@ import WeatherIcon from "./WeatherIcon";
 export default function WeatherData({ data, size }) {
   return (
     <div className="WeatherData">
-      <section className="city-weather-container mt-4">
+      <section className="city-weather-container mt-5 mt-sm-4">
         <div className="row gap-0">
           <div className="city-weather-section d-block m-auto text-center col-sm-7 text-sm-start ps-sm-5 ">
             <h1 className="">{data.city}</h1>
@@ -25,7 +25,7 @@ export default function WeatherData({ data, size }) {
               </li>
             </ul>
           </div>
-          <div className="temperature-section col-sm-5 text-sm-end pe-sm-5">
+          <div className="temperature-section col-sm-5 text-sm-end pe-sm-5 mt-3">
             <div className=" ">
               <div className="row">
                 <div className="col-6 text-end">

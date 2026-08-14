@@ -18,9 +18,9 @@ export default function ForecastDay({ dayForecast }) {
         </div>
         <div className="weekday-temp pt-2 ps-0 ps-sm-2 container">
           <div className="row ">
-            <div className="col-6 ps-sm-2 ps-1 fontSmall">
+            <div className="col-6 ps-sm-2 ps-2 fontSmall">
               <span className="max-temp">
-                <strong>{Math.round(dayForecast.temperature.maximum)}°</strong>
+                <strong>{Math.round(dayForecast.temperature.maximum)}° </strong>
               </span>
             </div>
             <div className="col-6 ps-sm-2 ps-2 fontSmall">

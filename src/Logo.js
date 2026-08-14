@@ -2,7 +2,7 @@ import React from "react";
 import logo from "./nrf_badge_logo_cropped.png";
 export default function Logo() {
   return (
-    <div className="Logo ms-sm-3 mt-3 ps-4 ">
+    <div className="Logo ms-sm-2 mt-3 ps-4 ">
       <span>
         <img src={logo} width="45px" alt="Logo" />
       </span>
