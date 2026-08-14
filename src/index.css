@@ -5,3 +5,8 @@ body {
   background: linear-gradient(to bottom, #fddb92 0%, #baf7fa 100%);
   min-height: 100vh;
 }
+@media (max-width: 600px) {
+  body {
+    background: none;
+  }
+}

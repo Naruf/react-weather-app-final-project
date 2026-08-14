@@ -9,7 +9,7 @@ export default function WeatherData({ data, size }) {
       <section className="city-weather-container mt-5 mt-sm-4">
         <div className="row gap-0">
           <div className="city-weather-section d-block m-auto text-center col-sm-7 text-sm-start ps-sm-5 ">
-            <h1 className="">{data.city}</h1>
+            <h1 className="city-name">{data.city}</h1>
             <ul className="list ps-0">
               <li>
                 <span className="">
