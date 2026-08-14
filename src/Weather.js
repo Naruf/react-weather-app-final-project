@@ -56,7 +56,7 @@ export default function Weather({ defaultCity }) {
                   type="search"
                   placeholder="Enter a city name..."
                   required
-                  autoFocus="on"
+                  // autoFocus="on"
                   onChange={handleCityUpdate}
                 />
               </div>
