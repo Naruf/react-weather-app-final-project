@@ -21,7 +21,7 @@ export default function Forecast({ coordinates }) {
   if (forecastReady) {
     // console.log(forecast);
     return (
-      <div className="forecast-container text-center ps-sm-3 pe-sm-3 mt-4 mb-5 ">
+      <div className="forecast-container text-center ps-sm-3 pe-sm-3 mt-2 mb-5 ">
         <div className="row d-flex gap-1 gap-sm-3 justify-content-evenly">
           {forecast.map(function (eachDayForecast, index) {
             if (index < 5) {

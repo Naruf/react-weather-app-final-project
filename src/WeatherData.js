@@ -6,7 +6,7 @@ import WeatherIcon from "./WeatherIcon";
 export default function WeatherData({ data, size }) {
   return (
     <div className="WeatherData">
-      <section className="city-weather-container mt-5 mt-sm-4">
+      <section className="city-weather-container mt-4 mt-sm-4">
         <div className="row gap-0">
           <div className="city-weather-section d-block m-auto text-center col-sm-7 text-sm-start ps-sm-5 ">
             <h1 className="city-name">{data.city}</h1>

@@ -45,7 +45,10 @@ export default function Weather({ defaultCity }) {
     return (
       <div className="container">
         <header className="border-bottom border-secondary-subtle">
-          <h1 className="App-title-font text-center p-2 m-3"> Weather App</h1>
+          <h1 className="App-title-font text-center p-2 m-3 mt-2">
+            {" "}
+            Weather App
+          </h1>
           <form
             className="form-container mt-3 mb-3 mb me-2 me-sm-3 ms-sm-1 ms-0"
             onSubmit={handleSubmit}
