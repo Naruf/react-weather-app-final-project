@@ -10,7 +10,7 @@ export default function Weather({ defaultCity }) {
 
   //Weather api call to update weather info for a given city in the component <Weather city = "london">
   function handleApiResponse(response) {
-    console.log(response.data);
+    // console.log(response.data);
     setReady(true);
     setWeatherInfo({
       city: response.data.city,
@@ -56,11 +56,12 @@ export default function Weather({ defaultCity }) {
             <div className="row d-block m-auto text-center d-sm-flex w-auto">
               <div className="col-12 col-sm-9 me-0 pe-0">
                 <input
-                  className="search-input p-2 ps-3 mb-4 rounded background-color-sm-light text-secondary"
+                  className="search-input p-2 ps-3 mb-3 rounded background-color-sm-light text-secondary"
                   type="search"
                   placeholder="Enter a city name..."
                   required
                   onChange={handleCityUpdate}
+                  autoFocus="off"
                 />
               </div>
               <div className="col-12 justify-content-center m-auto mt-2 mt-sm-0 col-sm-3 ms-sm-0">
