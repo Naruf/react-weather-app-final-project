@@ -4,6 +4,7 @@
   font-weight: 400;
   font-style: normal;
   width: 700px;
+  padding: 10px;
 }
 
 @media (max-width: 600px) {
@@ -11,5 +12,6 @@
     display: block;
     margin: auto;
     max-width: 520px;
+    background: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
   }
 }
