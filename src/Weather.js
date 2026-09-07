@@ -61,7 +61,6 @@ export default function Weather({ defaultCity }) {
                   placeholder="Enter a city name..."
                   required
                   onChange={handleCityUpdate}
-                  autoFocus="off"
                 />
               </div>
               <div className="col-12 justify-content-center m-auto mt-2 mt-sm-0 col-sm-3 ms-sm-0">
