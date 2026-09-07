@@ -44,25 +44,25 @@ export default function Weather({ defaultCity }) {
   if (ready) {
     return (
       <div className="container">
-        <header className="border-bottom">
+        <header className="border-bottom border-secondary-subtle">
+          <h1 className="App-title-font text-center p-2 m-3"> Weather App</h1>
           <form
-            className="form-container mt-4 mb-4 me-2 me-sm-3 ms-sm-1 ms-0"
+            className="form-container mt-3 mb-3 mb me-2 me-sm-3 ms-sm-1 ms-0"
             onSubmit={handleSubmit}
           >
             <div className="row d-block m-auto text-center d-sm-flex w-auto">
               <div className="col-12 col-sm-9 me-0 pe-0">
                 <input
-                  className="search-input w-100 p-2 ps-3 rounded border-1 border-secondary-subtle background-color-light text-secondary"
+                  className="search-input p-2 ps-3 mb-4 rounded background-color-sm-light text-secondary"
                   type="search"
                   placeholder="Enter a city name..."
                   required
-                  // autoFocus="on"
                   onChange={handleCityUpdate}
                 />
               </div>
               <div className="col-12 justify-content-center m-auto mt-2 mt-sm-0 col-sm-3 ms-sm-0">
                 <input
-                  className="search-button p-2 ps-5 pe-5 rounded border-0 background-color-dark text-white"
+                  className="search-button p-2 ps-5 pe-5 mb-3 rounded border-0 background-color-dark text-white"
                   type="submit"
                   value="Search"
                 />

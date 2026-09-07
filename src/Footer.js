@@ -3,8 +3,8 @@ import React from "react";
 export default function Footer() {
   return (
     <div
-      className="Footer text-center border-top m-3 p-3 text-secondary pt-4
-     text-opacity-50 smallFont"
+      className="Footer text-center border-top border-secondary-subtle m-3 mb-4 mb-sm-3 p-3 text-secondary pt-4
+     text-opacity-75 smallFont"
     >
       This project was coded by{" "}
       <a
