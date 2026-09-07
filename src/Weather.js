@@ -52,7 +52,7 @@ export default function Weather({ defaultCity }) {
             <div className="row d-block m-auto text-center d-sm-flex w-auto">
               <div className="col-12 col-sm-9 me-0 pe-0">
                 <input
-                  className="search-input w-100 p-2 ps-3 rounded border-0 background-color-light text-secondary"
+                  className="search-input w-100 p-2 ps-3 rounded border-1 border-secondary-subtle background-color-light text-secondary"
                   type="search"
                   placeholder="Enter a city name..."
                   required
