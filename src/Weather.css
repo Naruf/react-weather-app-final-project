@@ -11,7 +11,7 @@
 .search-input {
   min-width: 450px;
   border: 1px solid rgb(219, 219, 219);
-  appearance: searchfield;
+  -webkit-appearance: searchfield;
 }
 .App-title-font {
   font-size: 35px;
